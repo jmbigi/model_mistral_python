@@ -1,0 +1,4 @@
+{
+  "question": "¿Qué es la función `input()` en Python?",
+  "answer": "\nThe function `input()` in Python is used to obtain user input from the keyboard. It prompts the user with a message and returns the value entered by the user as a string. This function can be useful for getting user input during program execution, allowing the user to interact with the program and make decisions based on the input they provide."
+}

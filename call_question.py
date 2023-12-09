@@ -73,8 +73,9 @@ if __name__ == "__main__":
         "¿Cómo se pueden crear funciones anónimas en Python?",
         "¿Cómo se pueden crear funciones lambda en Python?",
     ]
-
-    for i in range(3):
+    questions = []
+    questToGen = 10
+    for i in range(questToGen):
         answerGen = get_question_answer("Petición-pregunta-evaluación", 'Quiero una (solo una) pregunta aleatoria para una evaluación de Python (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta), devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?')
         if answerGen is not None:
             answerGen = answerGen.replace("\n", "")
