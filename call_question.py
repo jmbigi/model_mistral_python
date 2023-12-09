@@ -74,6 +74,13 @@ if __name__ == "__main__":
         "¿Cómo se pueden crear funciones lambda en Python?",
     ]
 
+    for i in range(3):
+        answerGen = get_question_answer("Petición-pregunta-evaluación", 'Quiero una (solo una) pregunta aleatoria para una evaluación de Python (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta), devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?')
+        if answerGen is not None:
+            answerGen = answerGen.replace("\n", "")
+            print("Pregunta generada: ", answerGen)
+            questions.append(answerGen)
+
     # Crear las carpetas si no existen
     preguntas_folder = "preguntas"
     respuestas_folder = "respuestas"
@@ -88,7 +95,8 @@ if __name__ == "__main__":
 
     # Guardar las preguntas y respuestas en formato JSON
     for question, answer in zip(questions, answers):
-        if (answer is None):
+        print(question[:20], answer[:20] if isinstance(answer, str) else 'None')
+        if (answer is not None):
             save_question(question, preguntas_folder)
             save_question_answer(question, answer, respuestas_folder)
         else:

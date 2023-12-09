@@ -1,4 +1,4 @@
 {
   "question": "¿Cómo se llama la instrucción que llama a una función?",
-  "answer": "La instrucción que llama a una función se llama llamada a función o invocación de función."
+  "answer": "\nLa instrucción que llama a una función en Python se llama llamada o invocación de la función. En Python, se utiliza el símbolo \"()\" para invocar o llamar a una función. Por ejemplo:\n```scss\ndef suma(x, y):\n    return x + y\nresultado = suma(2, 3)\nprint(resultado)\n```\nEn este ejemplo, la función \"suma\" es llamada con los argumentos \"x = 2\" y \"y = 3\". El resultado de la función se almacena en la variable \"resultado\", que luego se imprime."
 }
