@@ -17,7 +17,7 @@ def get_question_answer(question):
     url = "http://localhost:11434/api/generate"
     data = {
         "model": "pythonLearning",
-        "prompt": question,
+        "prompt": "Pregunta: " + question,
         "stream": False
     }
     response = requests.post(url, data=json.dumps(data))
@@ -38,7 +38,7 @@ def save_question(question, folder):
         folder: La carpeta en la que se guardará la pregunta.
     """
     question_filename = os.path.join(
-        folder, question.replace(" ", "_") + ".json")
+        folder, question.replace(" ", "_").replace("?", "")  + ".json")
     with open(question_filename, "w", encoding="utf-8") as f:
         json.dump({"question": question}, f, ensure_ascii=False, indent=2)
 
@@ -54,7 +54,7 @@ def save_question_answer(question, answer, folder):
     """
     save_question(question, folder)
     answer_filename = os.path.join(
-        folder, question.replace(" ", "_") + "_respuesta.json")
+        folder, question.replace(" ", "_").replace("?", "") + ".json")
     with open(answer_filename, "w", encoding="utf-8") as f:
         json.dump({"question": question, "answer": answer},
                   f, ensure_ascii=False, indent=2)
@@ -88,7 +88,7 @@ if __name__ == "__main__":
 
     # Guardar las preguntas y respuestas en formato JSON
     for question, answer in zip(questions, answers):
-        save_question_answer(question, answer, respuestas_folder)
         save_question(question, preguntas_folder)
+        save_question_answer(question, answer, respuestas_folder)
 
     print("Las preguntas y respuestas se han guardado correctamente en formato JSON en las carpetas 'preguntas' y 'respuestas'.")
