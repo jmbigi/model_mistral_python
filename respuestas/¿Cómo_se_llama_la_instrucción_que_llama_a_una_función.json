@@ -1,4 +1,4 @@
 {
   "question": "¿Cómo se llama la instrucción que llama a una función?",
-  "answer": "\nLa instrucción que llama a una función se llama llamada o invocación de función. En Python, se utiliza el punto (.) seguido del nombre de la función y los paréntesis () que contienen los argumentos de la función. Por ejemplo, para llamar a la función \"hola\" con el argumento \"mundo\", se escribe: `hola(\"mundo\")`."
+  "answer": "La instrucción que llama a una función se llama llamada a función o invocación de función."
 }
