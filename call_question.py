@@ -29,24 +29,39 @@ def get_question_answer(question):
     return answer
 
 
-def save_question_answer(question, answer):
+def save_question(question, folder):
     """
-    Guarda una pregunta y su respuesta en un archivo.
+    Guarda una pregunta en un archivo JSON en la carpeta especificada.
+
+    Args:
+        question: La pregunta a guardar.
+        folder: La carpeta en la que se guardará la pregunta.
+    """
+    question_filename = os.path.join(
+        folder, question.replace(" ", "_") + ".json")
+    with open(question_filename, "w", encoding="utf-8") as f:
+        json.dump({"question": question}, f, ensure_ascii=False, indent=2)
+
+
+def save_question_answer(question, answer, folder):
+    """
+    Guarda una pregunta y su respuesta en un archivo JSON en la carpeta especificada.
 
     Args:
         question: La pregunta a guardar.
         answer: La respuesta a la pregunta.
+        folder: La carpeta en la que se guardará la pregunta con su respuesta.
     """
-
-    question_filename = question.replace(" ", "_") + ".txt"
-    with open(question_filename, "w") as f:
-        f.write(question + "\n")
-        f.write(answer)
+    save_question(question, folder)
+    answer_filename = os.path.join(
+        folder, question.replace(" ", "_") + "_respuesta.json")
+    with open(answer_filename, "w", encoding="utf-8") as f:
+        json.dump({"question": question, "answer": answer},
+                  f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
     # Preguntas y respuestas para las evaluaciones
-
     questions = [
         "¿Qué es una función en Python?",
         "¿Cómo se define una función en Python?",
@@ -59,16 +74,21 @@ if __name__ == "__main__":
         "¿Cómo se pueden crear funciones lambda en Python?",
     ]
 
-    # Obtener las respuestas del modelo ollama pythonLearning
+    # Crear las carpetas si no existen
+    preguntas_folder = "preguntas"
+    respuestas_folder = "respuestas"
+    os.makedirs(preguntas_folder, exist_ok=True)
+    os.makedirs(respuestas_folder, exist_ok=True)
 
+    # Obtener las respuestas del modelo ollama pythonLearning
     answers = []
     for question in questions:
         answer = get_question_answer(question)
         answers.append(answer)
 
-    # Guardar las preguntas y respuestas
-
+    # Guardar las preguntas y respuestas en formato JSON
     for question, answer in zip(questions, answers):
-        save_question_answer(question, answer)
+        save_question_answer(question, answer, respuestas_folder)
+        save_question(question, preguntas_folder)
 
-    print("Las preguntas y respuestas se han guardado correctamente.")
+    print("Las preguntas y respuestas se han guardado correctamente en formato JSON en las carpetas 'preguntas' y 'respuestas'.")
