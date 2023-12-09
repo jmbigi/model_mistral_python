@@ -3,7 +3,7 @@ import json
 import os
 
 
-def get_question_answer(question):
+def get_question_answer(tipoPrompt, question):
     """
     Realiza una consulta al modelo ollama pythonLearning para obtener una respuesta a una pregunta.
 
@@ -17,7 +17,7 @@ def get_question_answer(question):
     url = "http://localhost:11434/api/generate"
     data = {
         "model": "pythonLearning",
-        "prompt": "Pregunta: " + question,
+        "prompt": tipoPrompt + ": " + question,
         "stream": False
     }
     response = requests.post(url, data=json.dumps(data))
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # Obtener las respuestas del modelo ollama pythonLearning
     answers = []
     for question in questions:
-        answer = get_question_answer(question)
+        answer = get_question_answer("Pregunta", question)
         answers.append(answer)
 
     # Guardar las preguntas y respuestas en formato JSON
