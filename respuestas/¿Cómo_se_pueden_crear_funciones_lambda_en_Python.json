@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se pueden crear funciones lambda en Python?",
+  "answer": "\nEn Python, se crean funciones lambda mediante la sintaxis `lambda argumentos: expresión`. Las funciones lambda son una forma corta y concisa de definir funciones anónimas, es decir, funciones sin nombre. Estas funciones se usan frecuentemente como argumentos de otras funciones o en listas de comprensión.\n\nPor ejemplo, la siguiente función lambda calcula el doble de un número:\n```python\ndoble = lambda x: 2 * x\n```\nEsta función lambda se usaría de la siguiente manera:\n```python\nnumero = 5\nresultado = doble(numero)\nprint(resultado) # Output: 10\n```\nEs importante notar que las funciones lambda solo pueden tener una sola expresión, y no puede contener instrucciones de control como `if`, `for`, o `while`. Además, no puede tener variables locales dentro de la función lambda."
+}

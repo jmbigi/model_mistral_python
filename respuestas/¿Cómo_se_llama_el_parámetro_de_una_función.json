@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se llama el parámetro de una función?",
+  "answer": "\nUn parámetro de una función es un valor que se pasa a la función cuando se llama. Los parámetros son utilizados para proporcionar información a la función y permitir que la función realice operaciones específicas con ese información. En Python, los parámetros de una función se definen dentro de los paréntesis de la función y se separan entre sí con comas. Por ejemplo, la siguiente función tiene dos parámetros:\n```python\ndef sumar(x, y):\n    return x + y\n```\nEn esta función, `x` y `y` son los parámetros que se utilizan para calcular la suma de los dos valores pasados a la función cuando se llama."
+}

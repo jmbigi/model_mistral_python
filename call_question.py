@@ -89,6 +89,7 @@ if __name__ == "__main__":
     # Guardar las preguntas y respuestas en formato JSON
     for question, answer in zip(questions, answers):
         save_question(question, preguntas_folder)
-        save_question_answer(question, answer, respuestas_folder)
+        if (answer is not None):
+            save_question_answer(question, answer, respuestas_folder)
 
     print("Las preguntas y respuestas se han guardado correctamente en formato JSON en las carpetas 'preguntas' y 'respuestas'.")
