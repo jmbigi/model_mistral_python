@@ -74,10 +74,12 @@ def should_save_generated_question(question):
         True si se debe guardar, False si no.
     """
     # Ejemplo de filtro: No guardar preguntas que contengan las palabras "objetivo" o "evaluación"
-    filter1 = "objetivo" not in question.lower(
-    ) and "evaluación" not in question.lower()
-    filter2 = "puedes intentar preguntas" not in question.lower()
-    return filter1 and filter2
+    filter1 = "objetivo".lower() not in question.lower(
+    ) and "evaluación".lower() not in question.lower() and "evaluation".lower() not in question.lower()
+    filter2 = "puedes intentar preguntas".lower() not in question.lower()
+    filter3 = "tipo de problema que desea resolver con python".lower() not in question.lower()
+    filter4 = "pregunta aleatoria".lower() not in question.lower()
+    return filter1 and filter2 and filter3 and filter4
 
 
 if __name__ == "__main__":
