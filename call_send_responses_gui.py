@@ -6,22 +6,30 @@ import os
 import random
 
 class OllamaGUI:
+
     def __init__(self, master):
         self.master = master
         master.title("Ollama API Interface")
 
-        self.folder_label = tk.Label(master, text="Carpeta de respuestas:")
-        self.folder_label.pack()
+        # Carpeta de respuestas
+        self.folder_frame = tk.Frame(master)
+        self.folder_frame.pack(pady=10)
 
-        self.folder_entry = tk.Entry(master, state='disabled', width=40)
+        self.folder_label = tk.Label(self.folder_frame, text="Carpeta de respuestas:")
+        self.folder_label.pack(side=tk.LEFT)
+
+        self.folder_path = tk.StringVar()
+        self.folder_entry = tk.Entry(self.folder_frame, textvariable=self.folder_path, state='disabled', width=65)
         self.folder_entry.pack(side=tk.LEFT)
 
-        self.browse_button = tk.Button(master, text="Explorar", command=self.browse_folder)
+        self.browse_button = tk.Button(self.folder_frame, text="Explorar", command=self.browse_folder)
         self.browse_button.pack(side=tk.LEFT, padx=(10, 0))
 
+        # Botón para enviar respuestas
         self.send_button = tk.Button(master, text="Enviar Respuestas", command=self.send_responses)
-        self.send_button.pack()
+        self.send_button.pack(pady=(10, 0))
 
+        # Etiqueta de estado
         self.status_label = tk.Label(master, text="")
         self.status_label.pack()
 
