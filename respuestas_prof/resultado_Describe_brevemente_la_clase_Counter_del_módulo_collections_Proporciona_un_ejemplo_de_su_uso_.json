@@ -1,5 +1,5 @@
 {
   "question": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
   "answer": "La clase Counter del módulo collections se utiliza para realizar cuentas y cuenta la frecuencia de elementos en una secuencia. Ejemplo: Counter([1,2,3,1,2,3]) devuelve {1: 2, 2: 2, 3: 2}.",
-  "score": "\nNota: 0.9 (Excelencia)\n\nNota Final del Profesor: (Promedio de las últimas 10 notas en las preguntas)"
+  "score": "La nota del profesor para la respuesta de la pregunta sería un 1.0.\n\nEl profesor ha descrito correctamente la clase Counter y su uso. También ha proporcionado un ejemplo claro y conciso que ilustra cómo funciona esta clase.\n\nLa nota final del profesor para las últimas 10 preguntas sería el promedio de los puntajes, pero sin tener acceso a esos datos no se puede calcular."
 }
