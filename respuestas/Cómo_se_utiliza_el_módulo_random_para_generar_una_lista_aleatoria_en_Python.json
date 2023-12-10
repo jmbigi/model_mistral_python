@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se utiliza el módulo random para generar una lista aleatoria en Python?",
+  "answer": "\nEl módulo `random` de Python proporciona una serie de funciones para trabajar con números aleatorios. Para generar una lista aleatoria, puedes utilizar la función `sample()`. Esta función acepta dos parámetros: el tamaño de la lista y una lista o cadena que se usarán como elementos de la lista aleatoria.\n\nPor ejemplo, para generar una lista aleatoria de 10 números entre 1 y 10, puedes usar:\n```python\nimport random\n\nnum_list = list(range(1, 11))\nrandom_list = random.sample(num_list, 10)\nprint(random_list)\n```\nEsto producirá una lista aleatoria de 10 números entre 1 y 10."
+}
