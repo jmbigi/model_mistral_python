@@ -56,7 +56,7 @@ if __name__ == "__main__":
         for pregunta, respuesta in zip(preguntas, respuestas_Profesor):
             prompt = f"""
     Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Profesor (entre 0,0 y 1,0).
-    La Nota debe ser solo un número.
+    La Nota debe ser solo un número. Tu respuesta debe ser solo la Nota (un número).
     Pregunta: {pregunta["pregunta"]}
     Respuesta del Profesor: {respuesta["respuesta"]}
             """

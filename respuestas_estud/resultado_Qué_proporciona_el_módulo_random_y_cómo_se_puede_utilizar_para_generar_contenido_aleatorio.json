@@ -1,5 +1,5 @@
 {
   "question": "¿Qué proporciona el módulo random y cómo se puede utilizar para generar contenido aleatorio?",
   "answer": "El módulo random permite generar números aleatorios y operaciones relacionadas con la aleatoriedad. Ejemplos: random.random() y random.choice([1,2,3,4,5]).",
-  "score": "\nNote: 0.9"
+  "score": "\nNota del Estudiante: 0.9"
 }
