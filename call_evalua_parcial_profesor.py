@@ -57,7 +57,6 @@ if __name__ == "__main__":
             prompt = f"""
     Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Profesor (entre 0,0 y 1,0).
     La Nota debe ser solo un número. Tu respuesta debe ser solo la Nota (puntaje, un número), y en Español.
-    También necesito la Nota Final del Profesor (promedio de las últimas 10 notas en las preguntas).
     Pregunta: {pregunta["pregunta"]}
     Respuesta del Profesor: {respuesta["respuesta"]}
             """

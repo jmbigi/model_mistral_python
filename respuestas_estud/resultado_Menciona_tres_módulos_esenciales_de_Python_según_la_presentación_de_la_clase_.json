@@ -1,5 +1,5 @@
 {
   "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
   "answer": "Los módulos esenciales son random, os y json",
-  "score": "\nNota: 0.95\n\nNota Final: 0.875"
+  "score": "\nNota del Estudiante: 1.0 (Por haber mencionado los tres módulos esenciales según la presentación de la clase).\n\nNota Final del Estudiante: (Promedio de las últimas 10 notas en las preguntas, considerando ceros) (Por no tener información sobre las últimas 9 notas)."
 }

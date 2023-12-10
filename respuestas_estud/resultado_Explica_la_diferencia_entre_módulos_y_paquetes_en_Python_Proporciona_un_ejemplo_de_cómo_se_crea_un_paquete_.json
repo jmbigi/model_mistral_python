@@ -1,5 +1,5 @@
 {
   "question": "Explica la diferencia entre módulos y paquetes en Python. Proporciona un ejemplo de cómo se crea un paquete.",
   "answer": "Un módulo es un archivo que tiene adentro las definiciones de funciones, clases y variables, en cambio un paquete es una colección de módulos y otros paquetes que se pueden importar en otros proyectos.\n\nPaquete/\n__init__.py\nSaludos.py\nScript.py",
-  "score": "\nNota del Estudiante: 0.8"
+  "score": "Nota: 0.8\n\nNota Final: 0.78 (promedio de las últimas 10 notas en las preguntas)"
 }
