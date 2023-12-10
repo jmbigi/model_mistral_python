@@ -1,5 +1,5 @@
 {
   "question": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
   "answer": "Algunas librerías ampliamente usadas son os, que interactúa con el sistema operativo, y datetime, que permite trabajar con fechas y horas.",
-  "score": "Excelente trabajo del estudiante! Su respuesta es correcta y proporciona una breve descripción de dos librerías comunes en Python. Las librerías os y datetime son muy útiles y se utilizan frecuentemente en el desarrollo de software en Python. Os interactúa con el sistema operativo, mientras que datetime permite trabajar con fechas y horas. Su nota es 1.0, excelente trabajo!"
+  "score": "\nNota del Estudiante: 0,8. El estudiante menciona dos librerías ampliamente usadas en Python y describe su propósito brevemente."
 }
