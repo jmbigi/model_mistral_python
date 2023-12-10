@@ -1,0 +1,5 @@
+{
+  "question": "¿Cómo se ejecutan las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas en el script script.py?",
+  "answer": "Las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas se ejecutan en el script script.py utilizando las importaciones from paquete.hola.saludos import saludar y from paquete.adios.despedidas import Despedida, respectivamente, seguido por las llamadas a saludar() y Despedida().",
+  "score": "\nLa respuesta del estudiante es correcta. La nota para este ejercicio sería 1.0, ya que el estudiante ha demostrado un buen entendimiento de cómo se utilizan las importaciones y llamas a funciones y métodos en Python."
+}

@@ -1,0 +1,5 @@
+{
+  "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
+  "answer": "Algunos módulos esenciales de Python mencionados son copy, collections, datetime, html, xml, json, math, random, sys, threading, y tkinter.",
+  "score": "Nota del estudiante: 0,75\n\nEl estudiante ha mencionado varios módulos esenciales de Python, algunos de los cuales son correctos. Sin embargo, también hay algunos errores comunes en la lista mencionada. Por ejemplo, \"datetime\" y \"random\" se escriben con una sola palabra, no con dos. También, \"tkinter\" es un módulo gráfico de Python, no un módulo esencial. Además, el estudiante ha omitido algunos otros módulos esenciales como \"str\", \"list\", y \"dict\"."
+}
