@@ -1,0 +1,4 @@
+{
+  "question": "Para qué sirve el ciclo de ejecución en Python?",
+  "answer": "\nEl ciclo de ejecución en Python se usa para controlar el flujo de la ejecución del programa. El ciclo de ejecución se puede utilizar para realizar varias tareas, tales como:\n\n1. Repetir una acción varias veces\n2. Ejecutar una acción si se cumplen ciertos condiciones\n3. Decisiones anidadas\n4. Control del flujo de ejecución\n5. Salidas e ingresos\n\nLos ciclos de ejecución más comunes en Python son while, for, y if-else. La sintaxis para estos ciclos de ejecución es:\n\n* while:\n```python\nwhile condición:\n    acción\n```\n* for:\n```python\nfor variable in iterable:\n    acción\n```\n* if-else:\n```python\nif condición:\n    acción\nelse:\n    otra acción\n```\nEl ciclo de ejecución es una parte importante del lenguaje de programación y se utiliza para crear programas eficientes, reutilizables y mantenibles."
+}
