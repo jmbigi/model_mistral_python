@@ -1,5 +1,5 @@
 {
   "question": "¿Qué proporciona el módulo random y cómo se puede utilizar para generar contenido aleatorio?",
   "answer": "El módulo random permite generar números aleatorios y operaciones relacionadas con la aleatoriedad. Ejemplos: random.random() y random.choice([1,2,3,4,5]).",
-  "score": "\nLa Nota del Profesor sería 0.75.\n\nEl módulo random de Python proporciona diversas funciones para generar números aleatorios y operaciones relacionadas con la aleatoriedad, como random.random() y random.choice([1,2,3,4,5]). Esto permite a los programadores crear contenido aleatorio de manera fácil y eficiente."
+  "score": "\nNota del Profesor: 0.75"
 }
