@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece.",
   "answer": "Este modulo tiene varias propiedades y métodos para constantes y funciones matemáticas dentro de python\n\nEjemplo\n\n1)\nMath.fabs(x)¶\nRetorna el valor absoluto de x.\n\n2)\nMath.isinf(x)¶\nRetorna True si x es infinito positivo o negativo, o False en caso contrario.",
-  "score": "\nNota del Estudiante: 0.85\n\nRespuesta del Estudiante: Este modulo tiene varias propiedades y métodos para constantes y funciones matemáticas dentro de python\n\nEjemplo\n\n1) Math.fabs(x) retorna el valor absoluto de x.\n2) Math.isinf(x) retorna True si x es infinito positivo o negativo, o False en caso contrario."
+  "score": "\nNota del Estudiante: 0,75\n\nNota Final: (promedio de las últimas 10 notas en las preguntas)"
 }

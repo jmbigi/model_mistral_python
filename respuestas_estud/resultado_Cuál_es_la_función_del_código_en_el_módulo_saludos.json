@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es la función del código en el módulo saludos?",
   "answer": "El código en el módulo saludos sería un string representado así input(“ingrese saludo”)",
-  "score": "\nNota: 0,5"
+  "score": "Nota del Estudiante: 0.5\n\nLa respuesta del estudiante es correcta, ya que el código en el módulo saludos utiliza una cadena de texto (string) para representar un mensaje de saludo al usuario mediante la función input()."
 }
