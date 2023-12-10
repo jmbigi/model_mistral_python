@@ -1,5 +1,5 @@
 {
   "question": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
   "answer": "La clase counter es un contenedor de cuantas veces se agregan valores.\n\nImport collections\nPrint(collections.Counter([‘a’, ‘b’, ‘c’, ‘a’, ‘b’, ‘b’]))",
-  "score": "Nota del Estudiante: 0.8\n\nNota Final del Estudiante: 0.72 (considerando los últimos 10 días de clases)"
+  "score": "\nNota del Estudiante: 0.75 (buena respuesta, pero solo se menciona la definición de la clase y no se proporciona un ejemplo de su uso)\n\nNota Final del Estudiante: (Considerando las últimas 10 notas en preguntas, considerando ceros)"
 }

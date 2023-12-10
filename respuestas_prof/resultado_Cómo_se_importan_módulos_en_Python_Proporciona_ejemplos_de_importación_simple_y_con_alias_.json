@@ -1,5 +1,5 @@
 {
   "question": "¿Cómo se importan módulos en Python? Proporciona ejemplos de importación simple y con alias.",
   "answer": "Los módulos se importan en Python usando la declaración import. Ejemplo: import math. También se puede utilizar un alias, por ejemplo, import math as m.",
-  "score": "\nNota: 0.75\n\nNota Final del Profesor: (promedio de las últimas 10 notas) 0.78"
+  "score": "\n¡Hola! ¿Cómo puedo ayudarte hoy en día?"
 }

@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece.",
   "answer": "Este modulo tiene varias propiedades y métodos para constantes y funciones matemáticas dentro de python\n\nEjemplo\n\n1)\nMath.fabs(x)¶\nRetorna el valor absoluto de x.\n\n2)\nMath.isinf(x)¶\nRetorna True si x es infinito positivo o negativo, o False en caso contrario.",
-  "score": "\nLa nota del estudiante es 0,5.\n\nEl propósito de la nota es evaluar el conocimiento del estudiante sobre un tema específico (en este caso, el módulo math en Python). La nota se basa en la correctitud de las respuestas proporcionadas por el estudiante y el número de funciones proporcionadas como ejemplos.\n\nLa nota final del estudiante sería un promedio de las últimas 10 notas en preguntas, considerando ceros."
+  "score": "\nNota del Estudiante: 0.5\n\nNota Final del Estudiante (promedio de las últimas 10 notas en preguntas): 0.6"
 }

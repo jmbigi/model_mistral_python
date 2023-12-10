@@ -1,5 +1,5 @@
 {
   "question": "¿Qué proporciona el módulo random y cómo se puede utilizar para generar contenido aleatorio?",
   "answer": "El modulo random se usa para producir números aleatorios.\n\nSe puede utilizar por ejemplo la función randomSeed() Arduino Uno / Nano da la posibilidad de colocar una variable o constante en la función aleatoria para generar más valores aleatorios.",
-  "score": "Nota del Estudiante: 0.6\n\nNota Final del Estudiante: 85%"
+  "score": "\nLa nota del estudiante es 0.8, ya que el estudiante proporciona la información general sobre el uso del módulo random y también menciona una función específica de Arduino Uno/Nano. Sin embargo, no proporciona ningún ejemplo de cómo se puede utilizar el módulo random para generar contenido aleatorio.\n\nLa nota final del estudiante es 0.75 (considerando ceros por los últimos 3 preguntas que no fueron respondidas correctamente)."
 }

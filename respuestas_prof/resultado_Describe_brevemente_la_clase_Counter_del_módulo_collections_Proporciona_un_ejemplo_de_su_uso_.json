@@ -1,5 +1,5 @@
 {
   "question": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
   "answer": "La clase Counter del módulo collections se utiliza para realizar cuentas y cuenta la frecuencia de elementos en una secuencia. Ejemplo: Counter([1,2,3,1,2,3]) devuelve {1: 2, 2: 2, 3: 2}.",
-  "score": "\nLa clase Counter del módulo collections es una herramienta que se utiliza para realizar cuentas y cuenta la frecuencia de elementos en una secuencia. Ejemplo:\n\nCounter([1,2,3,1,2,3]) devuelve {1: 2, 2: 2, 3: 2}\n\nLa clase Counter puede ser muy útil cuando se necesita conocer la cantidad de veces que aparecen ciertos elementos en una secuencia. Es particularmente útil cuando se trabaja con conjuntos de datos, como listas o tuplas, y se quiere contabilizar la frecuencia de los elementos dentro del conjunto.\n\nEl profesor aprobaría esta respuesta con un puntaje del 1.0, ya que es correcta y proporciona un ejemplo claro de cómo se utiliza la clase Counter."
+  "score": "\nNota: 0,8"
 }
