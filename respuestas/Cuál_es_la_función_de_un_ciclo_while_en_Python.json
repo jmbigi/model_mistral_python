@@ -1,0 +1,4 @@
+{
+  "question": "¿Cuál es la función de un ciclo while en Python?",
+  "answer": "\nLa función de un ciclo while en Python es repetir una sección de código mientras una condición específica sea verdadera. La sintaxis para el ciclo while es:\n```python\nwhile condition:\n    # sección de código a repetir\nelse:\n    # sección de código ejecutada cuando la condición finalmente no es verdadera\n```\nEl ciclo while se utiliza cuando no se conoce el número de veces que se necesita repetir una acción, o cuando se desea repetir una acción mientras una condición sea verdadera. En contraste, un ciclo for se utiliza cuando se conoce el número de veces que se necesita repetir una acción."
+}
