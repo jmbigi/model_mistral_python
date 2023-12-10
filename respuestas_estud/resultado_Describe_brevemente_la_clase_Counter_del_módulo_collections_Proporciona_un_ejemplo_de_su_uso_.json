@@ -1,5 +1,5 @@
 {
   "question": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
   "answer": "La clase counter es un contenedor de cuantas veces se agregan valores.\n\nImport collections\nPrint(collections.Counter([‘a’, ‘b’, ‘c’, ‘a’, ‘b’, ‘b’]))",
-  "score": "\nLa clase Counter del módulo collections es una clase que se utiliza para contar las veces en que se agregan valores a un conjunto. También proporciona métodos para obtener la cantidad de elementos que hay en un conjunto, como length() y itemcount().\n\nEl ejemplo de uso proporcionado muestra cómo utilizar la clase Counter para contar la cantidad de veces se agregan los valores 'a', 'b', y 'c' a un conjunto. El resultado es un objeto Counter([('a', 2), ('b', 2), ('c', 1)]) que muestra que el valor 'a' aparece dos veces, 'b' también aparece dos veces y 'c' aparece una vez en el conjunto.\n\nLa nota del estudiante es un 0.9."
+  "score": "\nLa nota del estudiante es: 0,75."
 }

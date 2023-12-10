@@ -1,5 +1,5 @@
 {
   "question": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
   "answer": "Os: tiene funciones para interactuar con el sistema, como crear, eliminar y manipular archivos y directorios, obtener la información del entorno y realizar comandos del sistema.\nJson : ofrece funciones para trabajar con datos en formato JSON, esto permitie la serialización y deserialización de objetos Python en JSON.",
-  "score": "\nNota: 0,85. El estudiante mencionó dos librerías ampliamente usadas en Python y brevemente describió su propósito."
+  "score": "\nNota del Estudiante: 0.8"
 }

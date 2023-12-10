@@ -39,32 +39,33 @@ def clean_question(question):
 
 
 if __name__ == "__main__":
-    respuestas_folder = "respuestas_estud"
-    os.makedirs(respuestas_folder, exist_ok=True)
+    for i in range(5):
+        respuestas_folder = "respuestas_estud"
+        os.makedirs(respuestas_folder, exist_ok=True)
 
-    # Cargar preguntas desde el archivo JSON
-    with open("preguntas.json", "r", encoding="utf-8") as preguntas_file:
-        preguntas_data = json.load(preguntas_file)
-        preguntas = preguntas_data.get("preguntas", [])
+        # Cargar preguntas desde el archivo JSON
+        with open("preguntas.json", "r", encoding="utf-8") as preguntas_file:
+            preguntas_data = json.load(preguntas_file)
+            preguntas = preguntas_data.get("preguntas", [])
 
-    # Cargar respuestas del estudiante desde el archivo JSON
-    with open("respuestas_estudiante.json", "r", encoding="utf-8") as respuestas_file:
-        respuestas_data = json.load(respuestas_file)
-        respuestas_estudiante = respuestas_data.get("respuestas", [])
+        # Cargar respuestas del estudiante desde el archivo JSON
+        with open("respuestas_estudiante.json", "r", encoding="utf-8") as respuestas_file:
+            respuestas_data = json.load(respuestas_file)
+            respuestas_estudiante = respuestas_data.get("respuestas", [])
 
-    for pregunta, respuesta in zip(preguntas, respuestas_estudiante):
-        prompt = f"""
-Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Estudiante (entre 0,0 y 1,0).
-La Nota debe ser solo un número. Tu respuesta debe ser solo la Nota (un número).
-Pregunta: {pregunta["pregunta"]}
-Respuesta del Estudiante: {respuesta["respuesta"]}
-        """
-        answerGrade = get_question_answer("Nota", prompt)
-        if answerGrade:
-            save_question_answer(
-                question=pregunta["pregunta"], answer=respuesta["respuesta"], nota=answerGrade,
-                folder=respuestas_folder, name='resultado_' +
-                clean_question(pregunta["pregunta"])
-            )
-        else:
-            print(f"ERROR: Pregunta sin respuesta: {pregunta}")
+        for pregunta, respuesta in zip(preguntas, respuestas_estudiante):
+            prompt = f"""
+    Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Estudiante (entre 0,0 y 1,0).
+    La Nota debe ser solo un número. Tu respuesta debe ser solo la Nota (puntaje, un número), y en Español. También necesito la Nota Final (promedio de las últimas 10 notas en las preguntas).
+    Pregunta: {pregunta["pregunta"]}
+    Respuesta del Estudiante: {respuesta["respuesta"]}
+            """
+            answerGrade = get_question_answer("Nota", prompt)
+            if answerGrade:
+                save_question_answer(
+                    question=pregunta["pregunta"], answer=respuesta["respuesta"], nota=answerGrade,
+                    folder=respuestas_folder, name='resultado_' +
+                    clean_question(pregunta["pregunta"])
+                )
+            else:
+                print(f"ERROR: Pregunta sin respuesta: {pregunta}")
