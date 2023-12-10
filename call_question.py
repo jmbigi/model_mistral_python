@@ -30,7 +30,7 @@ def get_question_answer(tipoPrompt, question):
 
 
 def clean_question(question):
-    return question.replace(" ", "_").replace("¿", "").replace("?", "").replace("\"", ""). replace("/", "_"). replace('"', '').replace("\\\"", "").replace(".", "_")
+    return question.strip().replace(" ", "_").replace("¿", "").replace("?", "").replace("\"", ""). replace("/", "_"). replace('"', '').replace("\\\"", "").replace(".", "_").replace("__", "_")
 
 
 def save_question(question, folder):
@@ -79,7 +79,8 @@ def should_save_generated_question(question):
     filter2 = "puedes intentar preguntas".lower() not in question.lower()
     filter3 = "tipo de problema que desea resolver con python".lower() not in question.lower()
     filter4 = "pregunta aleatoria".lower() not in question.lower()
-    return filter1 and filter2 and filter3 and filter4
+    filter5 = "API de inteligencia artificial".lower() not in question.lower()
+    return filter1 and filter2 and filter3 and filter4 and filter5
 
 
 if __name__ == "__main__":

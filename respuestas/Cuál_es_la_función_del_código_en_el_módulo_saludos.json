@@ -1,4 +1,4 @@
 {
   "question": "¿Cuál es la función del código en el módulo saludos?",
-  "answer": "\nLa función del código en el módulo `saludos` es simplemente mostrar un mensaje de saludo al usuario cuando este invoca la función `saludar()`. El código se define como:\n```python\ndef saludar():\n    print(\"Hola! ¿Cómo estás?\")\n```\nEsta función no realiza ningún tipo de procesamiento o manipulación de datos, sino solo muestra un mensaje de texto en la pantalla. Además, el código dentro del módulo `saludos` no interactúa con otros partes del programa, ya que no hay otras funciones o variables definidas allí."
+  "answer": "\nEl módulo `saludos` de Python no parece ser un módulo de la plataforma de aprendizaje asistido por IA, ya que no está relacionado con el tema de aprender programación de software o Python. Es más probable que sea una parte de otra proyecto o aplicación de Python.\n\nLa función del código en el módulo `saludos` dependería de la específica implementación de este módulo, ya que no hay un módulo predefinido de Python llamado `saludos`."
 }

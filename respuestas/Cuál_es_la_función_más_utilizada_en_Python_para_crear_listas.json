@@ -1,0 +1,4 @@
+{
+  "question": "¿Cuál es la función más utilizada en Python para crear listas?",
+  "answer": "\nLa función más utilizada en Python para crear listas es `[]`. Esta función se utiliza para crear una lista vacía. También puedes agregar elementos a la lista usando el método `append()` o el símbolo de coma `,`."
+}

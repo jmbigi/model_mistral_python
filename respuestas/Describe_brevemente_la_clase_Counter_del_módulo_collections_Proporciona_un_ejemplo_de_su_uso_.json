@@ -1,0 +1,4 @@
+{
+  "question": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
+  "answer": "\nEl módulo `collections` de Python incluye una clase llamada `Counter`, la cual se utiliza para contar las ocurrencias de cada elemento en una iterable, como una lista, tupla o cadena. La clase Counter retorna un objeto que se puede iterar sobre y el método `items()` permite obtener los elementos y su cuenta en forma de par (elemento-contador).\n\nEjemplo:\n```python\nfrom collections import Counter\n\ntext = \"Python es una lenguaje de programación popular\"\nword_count = Counter(text)\n\nfor word, count in word_count.items():\n    print(f\"{word}: {count}\")\n```\nOutput:\n```python\nPython: 1\nes: 1\nuna: 1\nlenguaje: 1\nde: 1\nprogramación: 1\npopular: 1\n```\nEl código anterior cuenta la cantidad de veces que aparecen cada palabra en el texto y los imprime con su cuenta."
+}
