@@ -1,0 +1,4 @@
+{
+  "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
+  "answer": "\n1. NumPy: Es un módulo de Python para trabajar con arrays y matrices de números.\n2. Pandas: Es un módulo de Python para manipular y análizar datos en forma tabular.\n3. Matplotlib: Es un módulo de Python para crear gráficos y visualizaciones de datos."
+}

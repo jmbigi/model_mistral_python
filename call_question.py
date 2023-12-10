@@ -62,6 +62,7 @@ def save_question_answer(question, answer, folder):
         json.dump({"question": question, "answer": answer},
                   f, ensure_ascii=False, indent=2)
 
+
 def should_save_generated_question(question):
     """
     Determina si se debe guardar la pregunta generada según ciertos criterios.
@@ -73,9 +74,11 @@ def should_save_generated_question(question):
         True si se debe guardar, False si no.
     """
     # Ejemplo de filtro: No guardar preguntas que contengan las palabras "objetivo" o "evaluación"
-    filter1 = "objetivo" not in question.lower() and "evaluación" not in question.lower()
+    filter1 = "objetivo" not in question.lower(
+    ) and "evaluación" not in question.lower()
     filter2 = "puedes intentar preguntas" not in question.lower()
     return filter1 and filter2
+
 
 if __name__ == "__main__":
     # Preguntas y respuestas para las evaluaciones
@@ -85,6 +88,18 @@ if __name__ == "__main__":
         "¿Cómo se llama el parámetro de una función?",
     ]
     questions = []
+    questions = [
+        "¿Cuál es la función del código en el módulo saludos?",
+        "¿Cómo se ejecutan las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas en el script script.py?",
+        "Menciona tres módulos esenciales de Python según la presentación de la clase.",
+        "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso.",
+        "Explica la utilidad del módulo datetime y muestra un ejemplo de cómo obtener la fecha y hora actual.",
+        "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece.",
+        "¿Qué proporciona el módulo random y cómo se puede utilizar para generar contenido aleatorio?",
+        "¿Cómo se importan módulos en Python? Proporciona ejemplos de importación simple y con alias.",
+        "Explica la diferencia entre módulos y paquetes en Python. Proporciona un ejemplo de cómo se crea un paquete.",
+        "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
+    ]
     questToGen = 10
     for i in range(questToGen):
         answerGen = get_question_answer(
@@ -112,9 +127,10 @@ if __name__ == "__main__":
                 print("Pregunta generada: ", answerGen)
                 questions.append(answerGen)
             else:
-                print("Error en la respuesta: ", answerGen, "Se genera reclamo")
-                resp_complain = get_question_answer("Reclamo", "La respuesta: " + answerGen + " \nNo cumple con los requisitos solicitados. No vuelvas a responder eso en este contexto.")
-
+                print("Error en la respuesta: ",
+                      answerGen, "Se genera reclamo")
+                resp_complain = get_question_answer(
+                    "Reclamo", "La respuesta: " + answerGen + " \nNo cumple con los requisitos solicitados. No vuelvas a responder eso en este contexto.")
 
     # Crear las carpetas si no existen
     preguntas_folder = "preguntas"

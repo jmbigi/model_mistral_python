@@ -1,0 +1,4 @@
+{
+  "question": "¿Cuál es la función del código en el módulo saludos?",
+  "answer": "\nEl código en el módulo `saludos` es una función que toma un parámetro `nombre` y devuelve un saludo personalizado al usuario. La función se llama `greet()`. El código funciona de la siguiente manera:\n\n1. El código inicializa dos variables: `nombre` y `saludo`.\n2. La variable `nombre` es asignada el valor del parámetro `nombre`.\n3. El código verifica si el valor de `nombre` es igual a \"admin\". Si es igual, entonces se asigna al variable `saludo` el valor \"Hola, administrador!\". En caso contrario, se asigna al variable `saludo` el valor \"Hola, usuario!\".\n4. El código retorna el valor de la variable `saludo`."
+}
