@@ -1,0 +1,4 @@
+{
+  "question": "¿Qué es la función `input()` en Python y qué tipo de dato devuelve?",
+  "answer": "\nLa función `input()` en Python es una función de entrada de datos que permite al usuario proporcionar una entrada de texto. La entrada se guarda como una variable de tipo cadena. El siguiente código muestra el uso de la función `input()` para pedir al usuario su nombre y devolverlo en una variable:\n```python\nnombre = input(\"¿Cuál es tu nombre? \")\nprint(\"Hola,\", nombre)\n```\nEn este código, `input()` pide el nombre del usuario y lo guarda en la variable `nombre`. El valor de `nombre` se utiliza más tarde para saludar al usuario."
+}

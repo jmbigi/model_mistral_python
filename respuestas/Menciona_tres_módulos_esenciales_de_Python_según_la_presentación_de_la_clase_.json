@@ -1,4 +1,4 @@
 {
   "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
-  "answer": "\nClaro, según la presentación de la clase, los tres módulos esenciales de Python son:\n\n1. `input()`: Este módulo se utiliza para ingresar datos de usuario en un programa de Python.\n2. `print()`: Este módulo se utiliza para imprimir resultados o mensajes en la pantalla del terminal o consola del dispositivo donde se está ejecutando el programa de Python.\n3. `if-elif-else`: Este módulo se utiliza para crear condiciones y decisiones en un programa de Python, permitiendo al programa seguir una ruta diferente dependiendo de la respuesta de la condición."
+  "answer": "\nClaro, según la presentación de la clase, los tres módulos esenciales de Python son:\n\n1. `input`: este módulo se utiliza para entrada de datos en el programa.\n2. `print`: este módulo se utiliza para salida de datos en el programa.\n3. `math`: este módulo se utiliza para realizar operaciones matemáticas en el programa, como calcular la raíz cuadrada o el factorial."
 }

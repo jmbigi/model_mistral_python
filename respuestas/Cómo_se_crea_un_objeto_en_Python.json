@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se crea un objeto en Python?",
+  "answer": "\nEn Python, un objeto se crea mediante la clase. Las clases se definen con la palabra clave \"class\", seguida del nombre de la clase y los parámetros (opcionalmente). Después de definir una clase, se crean objetos de esa clase mediante la sintaxis \"clase\\_nombre(parametro1, parametro2, ...)\".\n\nPor ejemplo, para crear un objeto llamado \"mi\\_objeto\" de la clase \"MiClase\", se podría escribir:\n```python\nclass MiClase:\n    def __init__(self, param1, param2):\n        self.param1 = param1\n        self.param2 = param2\n\nmi_objeto = MiClase(\"valor1\", \"valor2\")\n```\nEn este ejemplo, la clase `MiClase` tiene un constructor llamado `__init__`, que recibe dos parámetros y los asigna a los atributos `param1` y `param2`. Luego, se crea el objeto `mi_objeto` mediante el constructor de la clase `MiClase`, pasando los valores \"valor1\" y \"valor2\"."
+}
