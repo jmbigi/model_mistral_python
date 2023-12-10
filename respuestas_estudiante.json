@@ -1,45 +1,44 @@
 {
-    "respuestas": [
-      {
-        "id": 1,
-        "respuesta": "El código en el módulo saludos define una función saludar() que imprime un mensaje de saludo."
-      },
-      {
-        "id": 2,
-        "respuesta": "Las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas se ejecutan en el script script.py utilizando las importaciones from paquete.hola.saludos import saludar y from paquete.adios.despedidas import Despedida, respectivamente, seguido por las llamadas a saludar() y Despedida()."
-      },
-      {
-        "id": 3,
-        "respuesta": "Algunos módulos esenciales de Python mencionados son copy, collections, datetime, html, xml, json, math, random, sys, threading, y tkinter."
-      },
-      {
-        "id": 4,
-        "respuesta": "La clase Counter del módulo collections se utiliza para realizar cuentas y cuenta la frecuencia de elementos en una secuencia. Ejemplo: Counter([1,2,3,1,2,3]) devuelve {1: 2, 2: 2, 3: 2}."
-      },
-      {
-        "id": 5,
-        "respuesta": "El módulo datetime se utiliza para manejar fechas y horas. Ejemplo: from datetime import datetime; dt = datetime.now() obtiene la fecha y hora actual."
-      },
-      {
-        "id": 6,
-        "respuesta": "El módulo math ofrece funciones matemáticas comunes. Ejemplos: math.pow(2, 3) para potencia y math.sqrt(9) para raíz cuadrada."
-      },
-      {
-        "id": 7,
-        "respuesta": "El módulo random permite generar números aleatorios y operaciones relacionadas con la aleatoriedad. Ejemplos: random.random() y random.choice([1,2,3,4,5])."
-      },
-      {
-        "id": 8,
-        "respuesta": "Los módulos se importan en Python usando la declaración import. Ejemplo: import math. También se puede utilizar un alias, por ejemplo, import math as m."
-      },
-      {
-        "id": 9,
-        "respuesta": "En Python, un módulo es un archivo de código, mientras que un paquete es una carpeta que contiene varios módulos relacionados. Un paquete se crea creando una carpeta y colocando un archivo __init__.py dentro de ella."
-      },
-      {
-        "id": 10,
-        "respuesta": "Algunas librerías ampliamente usadas son os, que interactúa con el sistema operativo, y datetime, que permite trabajar con fechas y horas."
-      }
-    ]
-  }
-  
+  "respuestas": [
+    {
+      "id": 1,
+      "respuesta": "El código en el módulo saludos sería un string representado así input(“ingrese saludo”)"
+    },
+    {
+      "id": 2,
+      "respuesta": "Sin respuesta"
+    },
+    {
+      "id": 3,
+      "respuesta": "Los módulos esenciales son random, os y json"
+    },
+    {
+      "id": 4,
+      "respuesta": "La clase counter es un contenedor de cuantas veces se agregan valores.\n\nImport collections\nPrint(collections.Counter([‘a’, ‘b’, ‘c’, ‘a’, ‘b’, ‘b’]))"
+    },
+    {
+      "id": 5,
+      "respuesta": "El módulo datetime proporciona sirve para manipular fechas y horas\n\nCon una muy buena precisión\n\nPara obtener fecha y hora actual se necesita Con una llamada a now\n\nImport datetime as dt\nCurrent_date_and_time = dt.datetime.now()"
+    },
+    {
+      "id": 6,
+      "respuesta": "Este modulo tiene varias propiedades y métodos para constantes y funciones matemáticas dentro de python\n\nEjemplo\n\n1)\nMath.fabs(x)¶\nRetorna el valor absoluto de x.\n\n2)\nMath.isinf(x)¶\nRetorna True si x es infinito positivo o negativo, o False en caso contrario."
+    },
+    {
+      "id": 7,
+      "respuesta": "El modulo random se usa para producir números aleatorios.\n\nSe puede utilizar por ejemplo la función randomSeed() Arduino Uno / Nano da la posibilidad de colocar una variable o constante en la función aleatoria para generar más valores aleatorios."
+    },
+    {
+      "id": 8,
+      "respuesta": "Para importar modulos en python se utiliza el comando import\n\nY se puede hace de forma simple o con alias.\n\nEjemplo\n\nCon alias:\nImport math\nMy_math = math\nEjemplo simple:\nImportlib. Import_module()"
+    },
+    {
+      "id": 9,
+      "respuesta": "Un módulo es un archivo que tiene adentro las definiciones de funciones, clases y variables, en cambio un paquete es una colección de módulos y otros paquetes que se pueden importar en otros proyectos.\n\nPaquete/\n__init__.py\nSaludos.py\nScript.py"
+    },
+    {
+      "id": 10,
+      "respuesta": "Os: tiene funciones para interactuar con el sistema, como crear, eliminar y manipular archivos y directorios, obtener la información del entorno y realizar comandos del sistema.\nJson : ofrece funciones para trabajar con datos en formato JSON, esto permitie la serialización y deserialización de objetos Python en JSON."
+    }
+  ]
+}
