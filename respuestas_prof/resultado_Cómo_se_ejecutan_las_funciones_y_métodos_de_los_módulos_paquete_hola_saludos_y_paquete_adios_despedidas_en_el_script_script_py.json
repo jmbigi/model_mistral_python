@@ -1,5 +1,5 @@
 {
   "question": "¿Cómo se ejecutan las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas en el script script.py?",
   "answer": "Las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas se ejecutan en el script script.py utilizando las importaciones from paquete.hola.saludos import saludar y from paquete.adios.despedidas import Despedida, respectivamente, seguido por las llamadas a saludar() y Despedida().",
-  "score": "\nLa nota del profesor para la pregunta y respuesta proporcionada es 0,8."
+  "score": "\nNota: 0.8"
 }

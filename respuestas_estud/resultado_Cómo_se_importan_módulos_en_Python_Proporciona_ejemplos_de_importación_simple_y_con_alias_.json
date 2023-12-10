@@ -1,5 +1,5 @@
 {
   "question": "¿Cómo se importan módulos en Python? Proporciona ejemplos de importación simple y con alias.",
   "answer": "Para importar modulos en python se utiliza el comando import\n\nY se puede hace de forma simple o con alias.\n\nEjemplo\n\nCon alias:\nImport math\nMy_math = math\nEjemplo simple:\nImportlib. Import_module()",
-  "score": "\nNota del Estudiante: 0.8"
+  "score": "\nLa nota del estudiante es 0.95. El estudiante ha proporcionado un ejemplo correcto de cómo se importan módulos en Python con alias, y también ha incluido un ejemplo simple de importación sin alias."
 }

@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es la función del código en el módulo saludos?",
   "answer": "El código en el módulo saludos define una función saludar() que imprime un mensaje de saludo.",
-  "score": "\nNota: 0.5"
+  "score": "\nNota: 0.75"
 }
