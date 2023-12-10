@@ -3,6 +3,7 @@ from tkinter import scrolledtext, filedialog, messagebox
 import requests
 import json
 import os
+import random
 
 class OllamaGUI:
     def __init__(self, master):
@@ -43,9 +44,12 @@ class OllamaGUI:
                         response_data = json.load(file)
                         responses.append(response_data)
 
+            # Mezclar las respuestas
+            random.shuffle(responses)
+
             # Enviar respuestas a la API
             success_count = 0
-            for response_data in responses:
+            for response_data in responses[:5]:
                 response = send_to_ollama("Hecho", response_data)
                 if response:
                     success_count += 1
@@ -65,7 +69,6 @@ def send_to_ollama(tipoPrompt, response_data):
     url = "http://localhost:11434/api/generate"
     response = requests.post(url, data=json.dumps(data))
     response_json = response.json()
-    print(response_json)
     if response_json["done"]:
         return True
     else:
