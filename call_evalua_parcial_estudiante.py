@@ -39,9 +39,7 @@ def clean_question(question):
 
 
 if __name__ == "__main__":
-    preguntas_folder = "preguntas_eval"
     respuestas_folder = "respuestas_eval"
-    os.makedirs(preguntas_folder, exist_ok=True)
     os.makedirs(respuestas_folder, exist_ok=True)
 
     # Cargar preguntas desde el archivo JSON

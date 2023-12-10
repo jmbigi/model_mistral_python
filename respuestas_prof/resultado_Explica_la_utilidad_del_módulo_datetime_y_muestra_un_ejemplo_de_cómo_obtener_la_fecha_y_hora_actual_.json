@@ -1,0 +1,5 @@
+{
+  "question": "Explica la utilidad del módulo datetime y muestra un ejemplo de cómo obtener la fecha y hora actual.",
+  "answer": "El módulo datetime se utiliza para manejar fechas y horas. Ejemplo: from datetime import datetime; dt = datetime.now() obtiene la fecha y hora actual.",
+  "score": "Nota del Profesor: 0.85\n\nLa utilidad del módulo datetime es importante en el desarrollo de programas que requieren manipulación y calculo de fechas y horas. El ejemplo proporcionado muestra cómo obtener la fecha y hora actual con solo una línea de código, lo cual puede ser útil para añadir funcionalidades como almacenamiento de datos en base de tiempo o generación de reportes con información temporal."
+}

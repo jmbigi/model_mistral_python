@@ -1,0 +1,44 @@
+{
+  "respuestas": [
+    {
+      "id": 1,
+      "respuesta": "El código en el módulo saludos define una función saludar() que imprime un mensaje de saludo."
+    },
+    {
+      "id": 2,
+      "respuesta": "Las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas se ejecutan en el script script.py utilizando las importaciones from paquete.hola.saludos import saludar y from paquete.adios.despedidas import Despedida, respectivamente, seguido por las llamadas a saludar() y Despedida()."
+    },
+    {
+      "id": 3,
+      "respuesta": "Algunos módulos esenciales de Python mencionados son copy, collections, datetime, html, xml, json, math, random, sys, threading, y tkinter."
+    },
+    {
+      "id": 4,
+      "respuesta": "La clase Counter del módulo collections se utiliza para realizar cuentas y cuenta la frecuencia de elementos en una secuencia. Ejemplo: Counter([1,2,3,1,2,3]) devuelve {1: 2, 2: 2, 3: 2}."
+    },
+    {
+      "id": 5,
+      "respuesta": "El módulo datetime se utiliza para manejar fechas y horas. Ejemplo: from datetime import datetime; dt = datetime.now() obtiene la fecha y hora actual."
+    },
+    {
+      "id": 6,
+      "respuesta": "El módulo math ofrece funciones matemáticas comunes. Ejemplos: math.pow(2, 3) para potencia y math.sqrt(9) para raíz cuadrada."
+    },
+    {
+      "id": 7,
+      "respuesta": "El módulo random permite generar números aleatorios y operaciones relacionadas con la aleatoriedad. Ejemplos: random.random() y random.choice([1,2,3,4,5])."
+    },
+    {
+      "id": 8,
+      "respuesta": "Los módulos se importan en Python usando la declaración import. Ejemplo: import math. También se puede utilizar un alias, por ejemplo, import math as m."
+    },
+    {
+      "id": 9,
+      "respuesta": "En Python, un módulo es un archivo de código, mientras que un paquete es una carpeta que contiene varios módulos relacionados. Un paquete se crea creando una carpeta y colocando un archivo __init__.py dentro de ella."
+    },
+    {
+      "id": 10,
+      "respuesta": "Algunas librerías ampliamente usadas son os, que interactúa con el sistema operativo, y datetime, que permite trabajar con fechas y horas."
+    }
+  ]
+}
