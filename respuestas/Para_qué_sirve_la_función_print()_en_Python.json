@@ -1,0 +1,4 @@
+{
+  "question": "¿Para qué sirve la función print() en Python?",
+  "answer": "\nLa función `print()` en Python es una manera de imprimir valores y expresiones a la consola. Se utiliza para mostrar información, resultados o mensajes al usuario durante el ejecución del código. Al ser utilizada con un solo paréntesis, imprime el valor directamente al consola sin formatearlo. Si se utiliza con dos paréntesis, se puede agregar una cadena de texto que se concatenará con el valor y se mostrarán juntos. Además, `print()` puede ser utilizada para imprimir variables o expresiones en un formato específico, por ejemplo, con dos decimales."
+}

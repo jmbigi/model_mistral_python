@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo utiliza la función 'input' en Python para obtener datos de usuario?",
+  "answer": "\nLa función `input` en Python se utiliza para pedir datos al usuario y devolverlos como un valor de retorno. Algunas variantes de la función `input` incluyen `raw_input`, que no realiza ningún tratamiento de los caracteres antes de devolverlos, y `input()`, que solo devuelve el primer caracter de una cadena si se ingresa más de uno.\n\nEn general, la forma estándar de usar `input` es:\n```\nvalor = input(\"Pregunta para obtener datos del usuario: \")\n```\nEste código pedirá que el usuario ingrese un valor y devolverá ese valor como el valor de la variable `valor`.\n\nSi desea pedir datos sin incluir una pregunta específica, se puede utilizar la siguiente forma:\n```\nvalor = input()\n```\nEste código pedirá que el usuario ingrese un valor sin ningún pregunta precedente."
+}

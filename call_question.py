@@ -83,12 +83,6 @@ if __name__ == "__main__":
         "¿Qué es una función en Python?",
         "¿Cómo se define una función en Python?",
         "¿Cómo se llama el parámetro de una función?",
-        "¿Qué es el valor de retorno de una función?",
-        "¿Cómo se llama la instrucción que llama a una función?",
-        "¿Cómo se pueden pasar argumentos a una función?",
-        "¿Cómo se pueden devolver valores de una función?",
-        "¿Cómo se pueden crear funciones anónimas en Python?",
-        "¿Cómo se pueden crear funciones lambda en Python?",
     ]
     questions = []
     questToGen = 10
