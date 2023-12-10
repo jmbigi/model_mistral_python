@@ -29,6 +29,10 @@ def get_question_answer(tipoPrompt, question):
     return answer
 
 
+def clean_question(question):
+    return question.replace(" ", "_").replace("¿", "").replace("?", ""). replace("\"", "")
+
+
 def save_question(question, folder):
     """
     Guarda una pregunta en un archivo JSON en la carpeta especificada.
@@ -38,7 +42,7 @@ def save_question(question, folder):
         folder: La carpeta en la que se guardará la pregunta.
     """
     question_filename = os.path.join(
-        folder, question.replace(" ", "_").replace("?", "")  + ".json")
+        folder, clean_question(question) + ".json")
     with open(question_filename, "w", encoding="utf-8") as f:
         json.dump({"question": question}, f, ensure_ascii=False, indent=2)
 
@@ -52,9 +56,8 @@ def save_question_answer(question, answer, folder):
         answer: La respuesta a la pregunta.
         folder: La carpeta en la que se guardará la pregunta con su respuesta.
     """
-    save_question(question, folder)
     answer_filename = os.path.join(
-        folder, question.replace(" ", "_").replace("?", "") + ".json")
+        folder, clean_question(question) + ".json")
     with open(answer_filename, "w", encoding="utf-8") as f:
         json.dump({"question": question, "answer": answer},
                   f, ensure_ascii=False, indent=2)
@@ -76,7 +79,23 @@ if __name__ == "__main__":
     questions = []
     questToGen = 10
     for i in range(questToGen):
-        answerGen = get_question_answer("Petición-pregunta-evaluación", 'Quiero una (solo una) pregunta aleatoria para una evaluación de Python (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta), devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?')
+        answerGen = get_question_answer(
+            "Petición-pregunta-evaluación", """
+            Quiero una (solo una) pregunta aleatoria para una evaluación de Python (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta).
+            No responder con: Una pregunta de cómo puedo ayudarte.
+            No poner el texto: Por favor, aquí tienes una pregunta aleatoria para una evaluación de Python.
+            No poner el texto: ¿Cómo puedo ayudarte con la evaluación de Python?.
+            No poner el texto: La pregunta aleatoria para una evaluación de Python es.
+            No poner el texto: "Pregunta :". En tu respuesta, no quiero el texto "Pregunta: ", tampoco "Pregunta:".
+            No poner el texto: "¿Cómo puedo ayudarte con la evaluación de Python?".
+            No poner el texto: "* ".
+            No poner el texto: "¿Cuál es el objetivo de tu evaluación de Python?".
+            El objetivo es la evaluación de los conocimientos del estudiante de Python.
+            Devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?.
+            De nuevo, ejemplo de pregunta: ¿Para qué sirve return en una función?.
+            Solo quiero la pregunta. Quiero que me des una pregunta para un evaluación (prueba) de Python.
+            """
+        )
         if answerGen is not None:
             answerGen = answerGen.replace("\n", "")
             print("Pregunta generada: ", answerGen)
@@ -96,7 +115,8 @@ if __name__ == "__main__":
 
     # Guardar las preguntas y respuestas en formato JSON
     for question, answer in zip(questions, answers):
-        print(question[:20], answer[:20] if isinstance(answer, str) else 'None')
+        print(question[:20], answer[:20]
+              if isinstance(answer, str) else 'None')
         if (answer is not None):
             save_question(question, preguntas_folder)
             save_question_answer(question, answer, respuestas_folder)
