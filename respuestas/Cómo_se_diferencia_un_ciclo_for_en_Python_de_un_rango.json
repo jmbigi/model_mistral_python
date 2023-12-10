@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se diferencia un ciclo for en Python de un rango?",
+  "answer": "\nEn Python, un ciclo `for` se utiliza para iterar sobre una lista o una cadena de caracteres. El ciclo se repite por cada elemento del iterable y permite ejecutar una acción específica para cada elemento.\n\nPor otro lado, un rango se utiliza para crear una secuencia de valores numéricos entre dos valores específicos. Los rangos pueden ser utilizados en la definición de listas, tuplas y cadenas de caracteres.\n\nEn general, el uso de ciclos `for` es más flexible y permite iterar sobre cualquier tipo de objeto iterable, mientras que los rangos son específicos a los valores numéricos entre dos valores específicos."
+}

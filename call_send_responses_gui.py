@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import scrolledtext
+from tkinter import scrolledtext, filedialog, messagebox
 import requests
 import json
 import os
@@ -12,14 +12,25 @@ class OllamaGUI:
         self.folder_label = tk.Label(master, text="Carpeta de respuestas:")
         self.folder_label.pack()
 
-        self.folder_entry = tk.Entry(master)
-        self.folder_entry.pack()
+        self.folder_entry = tk.Entry(master, state='disabled', width=40)
+        self.folder_entry.pack(side=tk.LEFT)
+
+        self.browse_button = tk.Button(master, text="Explorar", command=self.browse_folder)
+        self.browse_button.pack(side=tk.LEFT, padx=(10, 0))
 
         self.send_button = tk.Button(master, text="Enviar Respuestas", command=self.send_responses)
         self.send_button.pack()
 
         self.status_label = tk.Label(master, text="")
         self.status_label.pack()
+
+    def browse_folder(self):
+        folder_path = filedialog.askdirectory()
+        if folder_path:
+            self.folder_entry.config(state='normal')
+            self.folder_entry.delete(0, tk.END)
+            self.folder_entry.insert(0, folder_path)
+            self.folder_entry.config(state='disabled')
 
     def send_responses(self):
         folder_path = self.folder_entry.get()
@@ -45,14 +56,12 @@ class OllamaGUI:
 
 def send_to_ollama(tipoPrompt, response_data):
     pregunta = response_data["question"]
-    respuesta = response_data["respuesta"]
+    respuesta = response_data["answer"]
     data = {
         "model": "pythonLearning",
         "prompt": tipoPrompt + ": " + pregunta + " \n " + respuesta,
         "stream": False
     }
-    response = requests.post(url, data=json.dumps(data))
-
     url = "http://localhost:11434/api/generate"
     response = requests.post(url, data=json.dumps(data))
     response_json = response.json()
