@@ -80,7 +80,8 @@ def should_save_generated_question(question):
     filter3 = "tipo de problema que desea resolver con python".lower() not in question.lower()
     filter4 = "pregunta aleatoria".lower() not in question.lower()
     filter5 = "API de inteligencia artificial".lower() not in question.lower()
-    return filter1 and filter2 and filter3 and filter4 and filter5
+    filter6 = "pregunta:".lower() not in question.lower()
+    return filter1 and filter2 and filter3 and filter4 and filter5 and filter6
 
 
 if __name__ == "__main__":

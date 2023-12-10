@@ -1,0 +1,4 @@
+{
+  "question": "¿Por qué la lista no se muestra en el print?",
+  "answer": "\nLa lista no se muestra en el `print` debido a que los elementos de la lista no están separados por commas. Para mostrar la lista en el `print`, puedes utilizar los siguientes dos métodos:\n\n1. Utilizando un loop y el método `join()` para separar los elementos de la lista con comas.\n```python\nmy_list = [\"apple\", \"banana\", \"cherry\"]\nprint(\", \".join(my_list))\n```\nOutput:\n```\napple, banana, cherry\n```\n2. Utilizando el método `str()` para convertir la lista en una cadena y separarla con comas.\n```python\nmy_list = [\"apple\", \"banana\", \"cherry\"]\nprint(\", \".join(str(item) for item in my_list))\n```\nOutput:\n```\napple, banana, cherry\n```"
+}

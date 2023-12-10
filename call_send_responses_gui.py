@@ -25,6 +25,13 @@ class OllamaGUI:
         self.browse_button = tk.Button(self.folder_frame, text="Explorar", command=self.browse_folder)
         self.browse_button.pack(side=tk.LEFT, padx=(10, 0))
 
+        # Cuadro de entrada para la cantidad de respuestas a enviar
+        self.quantity_label = tk.Label(master, text="Cantidad de respuestas a enviar:")
+        self.quantity_label.pack()
+
+        self.quantity_entry = tk.Entry(master)
+        self.quantity_entry.pack()
+
         # Botón para enviar respuestas
         self.send_button = tk.Button(master, text="Enviar Respuestas", command=self.send_responses)
         self.send_button.pack(pady=(10, 0))
@@ -52,12 +59,19 @@ class OllamaGUI:
                         response_data = json.load(file)
                         responses.append(response_data)
 
+            # Verificar que la entrada de cantidad sea un número entero
+            try:
+                quantity_to_send = int(self.quantity_entry.get())
+            except ValueError:
+                messagebox.showerror("Error", "Por favor, ingrese una cantidad válida.")
+                return
+
             # Mezclar las respuestas
             random.shuffle(responses)
 
-            # Enviar respuestas a la API
+            # Enviar respuestas a la API (limitar según la cantidad ingresada)
             success_count = 0
-            for response_data in responses[:5]:
+            for response_data in responses[:quantity_to_send]:
                 response = send_to_ollama("Hecho", response_data)
                 if response:
                     success_count += 1

@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo funciona el tipo de dato None en Python?",
+  "answer": "\nEl tipo de dato `None` es un valor especial en Python que representa el falso. Es utilizado cuando no se desea asignar ningún valor a una variable o para indicar que una función no retornó valor.\n\nEn los tipos de datos numéricos, `None` no tiene un valor numérico, y en los tipos de datos booleanos, el falso es representado por `False`.\n\nPor ejemplo, considera la siguiente variable:\n```scss\nx = None\n```\nEn este caso, `x` no está asignada un valor numérico, y no se puede usar para operaciones aritméticas. Además, no es posible convertirlo a un tipo de dato diferente.\n\nSi desea usar el falso como valor booleano, debería utilizar `False` en lugar de `None`. Por ejemplo:\n```scss\ny = False\n```\nLa función `type()` se puede utilizar para verificar si una variable es del tipo `None` o no. El resultado de `type(x)` sería `<class 'NoneType'>`."
+}
