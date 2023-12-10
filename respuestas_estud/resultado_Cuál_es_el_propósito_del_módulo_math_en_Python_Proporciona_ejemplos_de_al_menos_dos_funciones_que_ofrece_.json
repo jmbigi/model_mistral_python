@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece.",
   "answer": "El módulo math ofrece funciones matemáticas comunes. Ejemplos: math.pow(2, 3) para potencia y math.sqrt(9) para raíz cuadrada.",
-  "score": "Nota del Estudiante: 0,75"
+  "score": "Nota del Estudiante: 0.8\nEl estudiante ha proporcionado dos funciones correctas del módulo math en Python, y ha explicado brevemente su propósito."
 }
