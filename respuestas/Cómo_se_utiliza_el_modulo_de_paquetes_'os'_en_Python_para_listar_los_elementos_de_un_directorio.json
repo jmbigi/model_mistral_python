@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se utiliza el modulo de paquetes 'os' en Python para listar los elementos de un directorio?",
+  "answer": "\nEl modulo de paquetes 'os' en Python proporciona una interfaz para interactuar con el sistema operativo. Para listar los elementos de un directorio, se puede usar la función `listdir()` del modulo 'os'. \n\nEjemplo:\n```python\nimport os\n\ndirectory = \"path/to/directory\"\nfiles = os.listdir(directory)\nprint(files)\n```\nLa variable `directory` es el camino al directorio cuyos elementos queremos listar. La función `listdir()` devuelve una lista de los nombres de los archivos y subdirectorios en el directorio especificado. El resultado se imprime en la pantalla."
+}

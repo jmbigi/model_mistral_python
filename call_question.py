@@ -120,6 +120,7 @@ if __name__ == "__main__":
             No quiero respuestas del tipo: "¿En qué nivel de conocimiento de Python tienes experiencia?".
             No quiero que respondas con el texto: "¿Cuál es el objetivo de tu evaluación de Python?".
             No quiero que respondas con el texto: "Aquí tienes...".
+            No responder en Inglés.
             Devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?.
             De nuevo, ejemplo de pregunta: ¿Para qué sirve return en una función?.
             Solo quiero la pregunta. Quiero que me des una pregunta para un evaluación (prueba) de Python.
