@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se utiliza el método pass en Python?",
+  "answer": "\nEl método `pass` en Python es una palabra clave que no realiza ningún acción. Es utilizado cuando se necesita incluir algo en el código, pero no se quiere hacer nada con él. Se puede usar en varios lugares del código:\n\n* En una función o método para indicar que no se realizará ningún acción dentro de ella.\n```python\ndef my_function():\n    pass\n```\n* En un bucle (for, while) para indicar que la iteración no se realizará ninguna vez más.\n```python\nfor i in range(10):\n    pass\n```\n* En una condición o expresión si se necesita incluir algo en ella sin hacer nada con él.\n```python\nif x > 10:\n    pass\n```\nEl método `pass` no genera ningún error, pero es importante usarlo de forma correcta para evitar confusiones y errores en el futuro."
+}

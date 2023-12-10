@@ -1,0 +1,4 @@
+{
+  "question": "¿Qué es la diferencia entre una función y un método en Python?",
+  "answer": "\nEn Python, una función y un método son conceptos relacionados pero diferentes.\n\nUna función es una bloque de código que se puede invocar desde otro lugar en el programa mediante su nombre y paréntesis. Funciones no tienen acceso al estado interno de las clases y solo pueden devolver valores, no modificarlos.\n\nUn método, por otro lado, es una función que se encuentra dentro de una clase en Python. Métodos tienen acceso al estado interno de la clase mediante el uso del atributo \"self\" y pueden modificar los valores de los atributos de la clase. Además, los métodos también pueden devolver valores como funciones normales.\n\nEn resumen, una función es una unidad de código independiente que se invoca desde otro lugar en el programa, mientras que un método es una función que se encuentra dentro de una clase y tiene acceso al estado interno de la clase."
+}

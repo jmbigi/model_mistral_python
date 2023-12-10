@@ -1,0 +1,4 @@
+{
+  "question": "¿Qué es un objeto en Python?",
+  "answer": "\nUn objeto en Python es una instancia de una clase. Es un contenedor de datos y métodos relacionados con ese tipo de dato. Un objeto puede ser creado mediante la invocación de su clase, y se crean varios objetos de una misma clase cuando se desea trabajar con diferentes ejemplares del mismo tipo de dato. Los objetos tienen propiedades (atributos) y métodos (métodos), los cuales son utilizados para manipular o interactuar con el objeto."
+}
