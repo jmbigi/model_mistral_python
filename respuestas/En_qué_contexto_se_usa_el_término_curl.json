@@ -1,0 +1,4 @@
+{
+  "question": "¿En qué contexto se usa el término \"curl\"?",
+  "answer": "\nEl término \"curl\" se refiere a un utilitario de línea de comando en Linux y Unix-like sistemas para transferir datos entre un cliente y un servidor mediante el protocolo HTTP(S). Es utilizado para realizar una variedad de tareas, como enviar formularios HTML al servidor, obtener contenido web con programas de procesamiento, ver la documentación o ayudar a la depuración de problemas.\n\nEn el contexto del aprendizaje asistido por IA, \"curl\" puede ser utilizado para realizar peticiones HTTP a los servidores de la plataforma de aprendizaje para obtener información sobre los resultados de las evaluaciones de los alumnos y otros datos relevantes. También se puede utilizar para enviar actualizaciones de los resultados de IA a las bases de datos Web de la plataforma."
+}

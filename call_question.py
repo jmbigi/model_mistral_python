@@ -30,7 +30,7 @@ def get_question_answer(tipoPrompt, question):
 
 
 def clean_question(question):
-    return question.replace(" ", "_").replace("¿", "").replace("?", ""). replace("\"", "")
+    return question.replace(" ", "_").replace("¿", "").replace("?", "").replace("\"", ""). replace("/", "_"). replace('"', '').replace("\\\"", "")
 
 
 def save_question(question, folder):
@@ -62,6 +62,20 @@ def save_question_answer(question, answer, folder):
         json.dump({"question": question, "answer": answer},
                   f, ensure_ascii=False, indent=2)
 
+def should_save_generated_question(question):
+    """
+    Determina si se debe guardar la pregunta generada según ciertos criterios.
+
+    Args:
+        question: La pregunta generada.
+
+    Returns:
+        True si se debe guardar, False si no.
+    """
+    # Ejemplo de filtro: No guardar preguntas que contengan las palabras "objetivo" o "evaluación"
+    filter1 = "objetivo" not in question.lower() and "evaluación" not in question.lower()
+    filter2 = "puedes intentar preguntas" not in question.lower()
+    return filter1 and filter2
 
 if __name__ == "__main__":
     # Preguntas y respuestas para las evaluaciones
@@ -81,7 +95,7 @@ if __name__ == "__main__":
     for i in range(questToGen):
         answerGen = get_question_answer(
             "Petición-pregunta-evaluación", """
-            Quiero una (solo una) pregunta aleatoria para una evaluación de Python (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta).
+            Quiero una (solo una) pregunta aleatoria para una evaluación de los conocimientos de Python del estudiante (no quiero la respuesta a la pregunta en este Prompt, sino la pregunta).
             No responder con: Una pregunta de cómo puedo ayudarte.
             No poner el texto: Por favor, aquí tienes una pregunta aleatoria para una evaluación de Python.
             No poner el texto: ¿Cómo puedo ayudarte con la evaluación de Python?.
@@ -90,16 +104,23 @@ if __name__ == "__main__":
             No poner el texto: "¿Cómo puedo ayudarte con la evaluación de Python?".
             No poner el texto: "* ".
             No poner el texto: "¿Cuál es el objetivo de tu evaluación de Python?".
-            El objetivo es la evaluación de los conocimientos del estudiante de Python.
+            No quiero respuestas del tipo: "¿En qué nivel de conocimiento de Python tienes experiencia?".
+            No quiero que respondas con el texto: "¿Cuál es el objetivo de tu evaluación de Python?".
+            No quiero que respondas con el texto: "Aquí tienes...".
             Devolver solo la pregunta, ejemplo: ¿Para qué sirve return en una función?.
             De nuevo, ejemplo de pregunta: ¿Para qué sirve return en una función?.
             Solo quiero la pregunta. Quiero que me des una pregunta para un evaluación (prueba) de Python.
             """
         )
         if answerGen is not None:
-            answerGen = answerGen.replace("\n", "")
-            print("Pregunta generada: ", answerGen)
-            questions.append(answerGen)
+            answerGen = answerGen.replace("\n", "").replace('"', '')
+            if should_save_generated_question(answerGen):
+                print("Pregunta generada: ", answerGen)
+                questions.append(answerGen)
+            else:
+                print("Error en la respuesta: ", answerGen, "Se genera reclamo")
+                resp_complain = get_question_answer("Reclamo", "La respuesta: " + answerGen + " \nNo cumple con los requisitos solicitados. No vuelvas a responder eso en este contexto.")
+
 
     # Crear las carpetas si no existen
     preguntas_folder = "preguntas"

@@ -1,0 +1,4 @@
+{
+  "question": "¿Qué es el uso de la función `input()` en Python?",
+  "answer": "\nLa función `input()` en Python es utilizada para pedir ingreso de datos al usuario. Ella devuelve el valor entrado por el usuario y lo almacena en una variable. Por ejemplo, si se utiliza la siguiente sentencia: `x = input(\"Ingrese un número: \")`, se mostrará un mensaje al usuario que dice \"Ingrese un número:\" y esperará que el usuario ingrese un valor numérico. El valor ingresado será almacenado en la variable `x` y se puede utilizar posteriormente en el código."
+}
