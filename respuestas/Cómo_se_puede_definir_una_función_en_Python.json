@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se puede definir una función en Python?",
+  "answer": "\nEn Python, una función se define utilizando la palabra clave `def` seguida del nombre de la función y sus parámetros en el orden en que serán usados. La función termina con una cierre de llaves `)`. El cuerpo de la función se indica entre las llaves `()` después de la definición.\n\nA continuación se muestra un ejemplo de una función simple:\n```python\ndef sumar(a, b):\n    \"\"\"\n    Esta función suma dos números enteros.\n    \"\"\"\n    return a + b\n```\nEn este ejemplo, la función `sumar` tiene dos parámetros `a` y `b`, que son los dos números que se sumaran. El cuerpo de la función se indica entre las llaves `()`. La función retorna el resultado de la suma de los dos números."
+}

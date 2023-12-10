@@ -1,0 +1,45 @@
+{
+    "preguntas": [
+      {
+        "id": 1,
+        "pregunta": "¿Cuál es la función del código en el módulo saludos?"
+      },
+      {
+        "id": 2,
+        "pregunta": "¿Cómo se ejecutan las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas en el script script.py?"
+      },
+      {
+        "id": 3,
+        "pregunta": "Menciona tres módulos esenciales de Python según la presentación de la clase."
+      },
+      {
+        "id": 4,
+        "pregunta": "Describe brevemente la clase Counter del módulo collections. Proporciona un ejemplo de su uso."
+      },
+      {
+        "id": 5,
+        "pregunta": "Explica la utilidad del módulo datetime y muestra un ejemplo de cómo obtener la fecha y hora actual."
+      },
+      {
+        "id": 6,
+        "pregunta": "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece."
+      },
+      {
+        "id": 7,
+        "pregunta": "¿Qué proporciona el módulo random y cómo se puede utilizar para generar contenido aleatorio?"
+      },
+      {
+        "id": 8,
+        "pregunta": "¿Cómo se importan módulos en Python? Proporciona ejemplos de importación simple y con alias."
+      },
+      {
+        "id": 9,
+        "pregunta": "Explica la diferencia entre módulos y paquetes en Python. Proporciona un ejemplo de cómo se crea un paquete."
+      },
+      {
+        "id": 10,
+        "pregunta": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito."
+      }
+    ]
+  }
+  

@@ -1,0 +1,4 @@
+{
+  "question": "¿Cómo se implementa el algoritmo de búsqueda binaria para encontrar un elemento en una lista ordenada?",
+  "answer": "El algoritmo de búsqueda binaria es un método de buscar un elemento en una lista ordenada. El algoritmo funciona dividiendo la lista en dos partes y revisando solo una de ellas, hasta que se encuentra el elemento o se determina que no existe en la lista.\n\nAquí está una implementación de búsqueda binaria en Python:\n```python\ndef binary_search(arr, x):\n    low = 0\n    high = len(arr) - 1\n    mid = 0\n    \n    while low <= high:\n        mid = (high + low) // 2\n        \n        if arr[mid] == x:\n            return mid\n        elif arr[mid] < x:\n            low = mid + 1\n        else:\n            high = mid - 1\n            \n    return -1\n```\nDonde `arr` es la lista ordenada y `x` es el elemento que se quiere buscar. El algoritmo devuelve la posición del elemento en la lista si existe, o `-1` si no se encuentra."
+}
