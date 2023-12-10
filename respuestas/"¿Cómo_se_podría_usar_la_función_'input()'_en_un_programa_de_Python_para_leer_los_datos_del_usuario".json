@@ -1,4 +1,0 @@
-{
-  "question": "\"¿Cómo se podría usar la función 'input()' en un programa de Python para leer los datos del usuario?\"",
-  "answer": "\nLa función `input()` en Python se utiliza para pedir datos del usuario y devolverlos como una entrada en el programa. En general, la sintaxis de `input()` es:\n```python\nentrada = input(\"Pregunta: \")\n```\nDonde \"Pregunta:\" es un texto que se muestra al usuario para que proporcione una entrada. El valor devuelto por la función es el dato ingresado por el usuario y se guarda en la variable `entrada`. Por ejemplo:\n```python\nedad = input(\"Introduce tu edad: \")\nprint(\"Tu edad es:\", int(edad))\n```\nEn este caso, el programa pedirá al usuario su edad y se guardará en la variable `edad`. Luego, se convertirá el dato a entero y se imprimirá en pantalla."
-}

@@ -1,4 +1,0 @@
-{
-  "question": "¿Cuál es la pregunta aleatoria que necesites para una evaluación de Python?",
-  "answer": "\nPuedes considerar preguntas como:\n\n1. ¿Cuál es la diferencia entre una lista y un diccionario en Python?\n2. ¿Cómo se utiliza el ciclo `for` para recorrer un rango de números en Python?\n3. ¿Cómo se utiliza la función `input()` para pedir información al usuario en Python?\n4. ¿Qué es el concepto de herencia en Python y cómo se utiliza?\n5. ¿Cómo se utiliza la función `random.randint()` para generar un número aleatorio entre dos números en Python?"
-}

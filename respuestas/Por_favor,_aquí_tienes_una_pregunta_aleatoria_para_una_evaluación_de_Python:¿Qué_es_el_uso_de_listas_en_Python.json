@@ -1,4 +1,0 @@
-{
-  "question": "Por favor, aquí tienes una pregunta aleatoria para una evaluación de Python:¿Qué es el uso de listas en Python?",
-  "answer": "\nListas en Python son una estructura de datos que se utilizan para almacenar y manipular colecciones de elementos, que pueden ser de cualquier tipo de dato. Las listas se crean usando corchetes `[]` y se separan los elementos entre comas `,`. Los elementos se pueden acceder por su índice (el primer elemento tiene índice 0, el segundo índice 1, y así sucesivamente). También se puede modificar el orden de los elementos en la lista mediante métodos como `append()`, `insert()`, `remove()`, y `pop()`. Además, se pueden aplicar operaciones como `len()` para obtener el número de elementos en una lista, o `sorted()` para ordenarla."
-}

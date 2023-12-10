@@ -1,4 +1,0 @@
-{
-  "question": "Pregunta: ¿Qué es el objeto de la clase `str` en Python?",
-  "answer": "\nEl objeto de la clase `str` en Python es un tipo de dato que representa una secuencia de caracteres. Los caracteres se pueden representar mediante varios tipos de datos, como bytes o códigos Unicode, pero los caracteres se acceden y manipulan de manera similar a través de la clase `str`.\n\nLa clase `str` proporciona una variedad de métodos para trabajar con cadenas de texto. Por ejemplo, puede ser utilizado para concatenar dos o más cadenas, cortar subcadenas, convertir entre diferentes representaciones de texto (como mayúsculas/minúsculas), comparar cadenas, y muchos otros."
-}

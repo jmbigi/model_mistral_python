@@ -30,7 +30,7 @@ def get_question_answer(tipoPrompt, question):
 
 
 def clean_question(question):
-    return question.replace(" ", "_").replace("¿", "").replace("?", "").replace("\"", ""). replace("/", "_"). replace('"', '').replace("\\\"", "")
+    return question.replace(" ", "_").replace("¿", "").replace("?", "").replace("\"", ""). replace("/", "_"). replace('"', '').replace("\\\"", "").replace(".", "_")
 
 
 def save_question(question, folder):
