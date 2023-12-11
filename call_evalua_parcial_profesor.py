@@ -39,9 +39,8 @@ def clean_question(question):
 
 
 def evalProf(preguntas, respuestas_profesor, respuestas_folder):
-        answers = []
-        for pregunta, respuesta in zip(preguntas, respuestas_profesor):
-            prompt = f"""
+    for pregunta, respuesta in zip(preguntas, respuestas_profesor):
+        prompt = f"""
     Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Profesor (entre 0,0 y 1,0).
     Respuesta incorrectas, deficientes o sin respuesta vale 0,0.
     Respuesta insuficiente vale 0,3 y 0,4.
@@ -51,42 +50,43 @@ def evalProf(preguntas, respuestas_profesor, respuestas_folder):
     Pregunta: {pregunta["pregunta"]}
     Respuesta del Profesor: {respuesta["respuesta"]}
             """
-            answerGrade = get_question_answer("Nota", prompt)
-            if answerGrade:
-                save_question_answer(
-                    question=pregunta["pregunta"], answer=respuesta["respuesta"], nota=answerGrade,
-                    folder=respuestas_folder, name='resultado_' +
-                    clean_question(pregunta["pregunta"])
-                )
-                answers.append({"question": pregunta["pregunta"], "answer": respuesta["respuesta"]})
-                break
-            else:
-                print(f"ERROR: Pregunta sin respuesta: {pregunta}")
-        if len(answers) > 0:
-            answer_filename = os.path.join(
-                os.path.dirname(respuestas_profesor), 'respuestas_ia' + ".json")
-            with open(answer_filename, "w", encoding="utf-8") as f:
-                json.dump(answers,
-                        f, ensure_ascii=False, indent=2)
+        answerGrade = get_question_answer("Nota", prompt)
+        if answerGrade:
+            save_question_answer(
+                question=pregunta["pregunta"], answer=respuesta["respuesta"], nota=answerGrade,
+                folder=respuestas_folder, name='resultado_' +
+                clean_question(pregunta["pregunta"])
+            )
+        else:
+            print(f"ERROR: Pregunta sin respuesta: {pregunta}")
 
-    
 
 def evalIA(preguntas, respuestas_folder):
-        for pregunta in preguntas:
-            prompt = f"""
+    answers = []
+    for pregunta in preguntas:
+        prompt = f"""
     Debes responder como Estudiante avanzado, como si fuera una Evaluación, sin preguntas ni comentarios, y en Español.
     En tu respuesta, no debes incluir la palabra Respuesta ni la palabra Pregunta.
     Pregunta: {pregunta["pregunta"]}
             """
-            answer = get_question_answer("Pregunta", prompt)
-            if answer:
-                save_question_answer(
-                    question=pregunta["pregunta"], answer=answer, nota=1.0,
-                    folder=respuestas_folder, name='resultado_' +
-                    clean_question(pregunta["pregunta"])
-                )
-            else:
-                print(f"ERROR: Pregunta sin respuesta: {pregunta}")
+        answer = get_question_answer("Pregunta", prompt)
+        if answer:
+            save_question_answer(
+                question=pregunta["pregunta"], answer=answer, nota=1.0,
+                folder=respuestas_folder, name='resultado_' +
+                clean_question(pregunta["pregunta"])
+            )
+            answers.append(
+                {"question": pregunta["pregunta"], "answer": answer})
+        else:
+            print(f"ERROR: Pregunta sin respuesta: {pregunta}")
+
+    if len(answers) > 0:
+        answer_filename = os.path.join(
+            os.path.dirname(respuestas_profesor), 'respuestas_ia' + ".json")
+        with open(answer_filename, "w", encoding="utf-8") as f:
+            json.dump(answers,
+                      f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
@@ -107,6 +107,6 @@ if __name__ == "__main__":
             respuestas_data = json.load(respuestas_file)
             respuestas_profesor = respuestas_data.get("respuestas", [])
 
-        #evalProf(preguntas=preguntas, respuestas_profesor=respuestas_profesor, respuestas_folder=respuestas_folder)
+        # evalProf(preguntas=preguntas, respuestas_profesor=respuestas_profesor, respuestas_folder=respuestas_folder)
 
         evalIA(preguntas=preguntas, respuestas_folder=respuestas_ia_folder)
