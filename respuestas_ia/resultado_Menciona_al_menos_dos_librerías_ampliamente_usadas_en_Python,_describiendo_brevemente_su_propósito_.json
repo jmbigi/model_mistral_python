@@ -1,5 +1,5 @@
 {
   "question": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
-  "answer": "\nPor favor, mencione dos librerías comunes en Python y proporcione una breve descripción de su fin.",
+  "answer": "\nLibrería: NumPy\nNumPy es una de las librerías más importantes en Python. Su objetivo es proporcionar un conjunto de herramientas para el análisis de datos y la ciencia de la computación. NumPy proporciona arrays, matrices y vectores de datos, que son los tipos de datos más comunes en el procesamiento de datos. También incluye funciones para manipular, calculo y visualización de estos datos.\n\nLibrería: Pandas\nPandas es otra librería ampliamente usada en Python. Su objetivo es proporcionar un conjunto de herramientas para el trabajo con tablas de datos. Pandas incluye dataframes, series y arrays de datos, que son los tipos de datos más comunes en el procesamiento de datos. También incluye funciones para manipular, calculo y visualización de estos datos.",
   "score": 1.0
 }

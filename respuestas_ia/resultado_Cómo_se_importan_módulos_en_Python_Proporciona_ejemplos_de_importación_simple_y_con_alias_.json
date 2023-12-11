@@ -1,5 +1,5 @@
 {
   "question": "¿Cómo se importan módulos en Python? Proporciona ejemplos de importación simple y con alias.",
-  "answer": "\nImportar módulos en Python se hace mediante la palabra clave \"import\". Los módulos son archivos con extensión \".py\" que contienen código Python. Para importar un módulo, se debe escribir su nombre en el momento de usarlo.\n\nPor ejemplo:\n```python\nimport math\nprint(math.pi)  # Output: 3.14159265358979323846\n\nimport math as m\nprint(m.pi)  # Output: 3.14159265358979323846\n```\nEn el primer ejemplo, se importa el módulo \"math\" y se utiliza su función \"pi\". En el segundo ejemplo, se importa el mismo módulo \"math\", pero con un alias (\"m\"). Ahora, para obtener el valor de \"pi\", se puede utilizar la variable \"m.pi\".",
+  "answer": "\nEn Python, se importan módulos utilizando la palabra clave \"import\" seguida del nombre del módulo. Los módulos pueden ser importados de forma simple o con un alias.\n\nPor ejemplo:\n\n1. Importación simple:\n```python\nimport math\nprint(math.pi)\n```\n2. Importación con alias:\n```python\nimport math as m\nprint(m.pi)\n```",
   "score": 1.0
 }

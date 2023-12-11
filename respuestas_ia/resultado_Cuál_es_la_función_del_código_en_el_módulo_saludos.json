@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es la función del código en el módulo saludos?",
-  "answer": "\nLa función del código en el módulo saludos es crear una interfaz de comunicación entre el usuario y la plataforma de aprendizaje asistido por IA. La función es llamada `saludos()` y se utiliza para darle la bienvenida al usuario cuando ingresa su nombre en la consola. El código implementa un sistema de reconocimiento de nombres, donde el usuario debe ingresar su nombre exacto o un nombre similar para ser reconocido por la plataforma. Si el nombre es correcto, se devuelve una respuesta personalizada y si no, se devuelve una respuesta genérica. Además, el código utiliza el módulo `random` para generar una frase aleatoria que se incluye en la respuesta personalizada.",
+  "answer": "\nLa función del código en el módulo saludos es para imprimir los saludos a un usuario en español. El código implementa una función llamada \"saluda\" que toma un parámetro de tipo cadena llamado \"nombre\" y devuelve una cadena que contiene el saludo personalizado al nombre del usuario. El módulo saludos se utiliza en programas donde se necesita imprimir los saludos a los usuarios, como un programa de chat o un sistema de control de acceso.",
   "score": 1.0
 }

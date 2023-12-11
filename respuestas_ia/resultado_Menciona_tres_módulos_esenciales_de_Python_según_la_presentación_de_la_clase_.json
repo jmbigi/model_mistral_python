@@ -1,5 +1,5 @@
 {
   "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
-  "answer": "\nLos tres módulos esenciales de Python según la presentación de la clase son:\n1. `input()`: permite obtener entrada de usuario en un programa Python.\n2. `print()`: imprime mensajes y valores a la pantalla de salida de un programa Python.\n3. `str()`: convierte tipos de datos diferentes (como números o listas) a cadenas de texto, lo que permite manipular y concatenar cadenas en un programa Python.",
+  "answer": "\nLos tres módulos esenciales de Python según la presentación de la clase son:\n\n1. `random`\n2. `input/print`\n3. `math`",
   "score": 1.0
 }
