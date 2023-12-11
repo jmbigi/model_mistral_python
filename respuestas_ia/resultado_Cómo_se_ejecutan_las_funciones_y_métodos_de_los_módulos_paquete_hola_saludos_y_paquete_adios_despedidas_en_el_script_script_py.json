@@ -1,0 +1,5 @@
+{
+  "question": "¿Cómo se ejecutan las funciones y métodos de los módulos paquete.hola.saludos y paquete.adios.despedidas en el script script.py?",
+  "answer": "\nPara ejecutar las funciones y métodos de los paquetes hola.saludos y adios.despedidas en el script script.py, se deben importar los paquetes previamente en el código. Por ejemplo:\n```python\nimport hola_saludos\nimport adios_despedidas\n\nhola = hola_saludos.HolaSaludos()\nhola.saludo()\n\nadios = adios_despedidas.AdiosDespedidas()\nadios.despedida()\n```\nEn este ejemplo se importan los paquetes hola\\_saludos y adios\\_despedidas, se crean instancias de las clases HolaSaludos y AdiosDespedidas respectivamente, y se llaman a los métodos saludo() y despedida(). Esto ejecutará las funciones y métodos definidos en los paquetes.",
+  "score": 1.0
+}

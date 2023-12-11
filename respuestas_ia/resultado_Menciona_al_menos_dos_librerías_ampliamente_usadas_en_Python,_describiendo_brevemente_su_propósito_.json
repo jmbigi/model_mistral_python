@@ -1,0 +1,5 @@
+{
+  "question": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
+  "answer": "\nPython es un lenguaje de programación popular en el campo de la inteligencia artificial y el desarrollo de software. Dicho así, hay varias librerías ampliamente usadas en Python que ayudan a los programadores a realizar tareas específicas.\n\n1. NumPy: Es una librería de Python para trabajar con arrays y matrices numéricos. Ofrece funciones para operaciones matemáticas como aritmética, estadística, e incluso algunos algoritmos de aprendizaje profundo.\n2. Pandas: Es una librería de Python para manipular y analizar datos tabulares. Ofrece funciones para lectura y escritura de diferentes formatos de datos, como CSV y Excel, así como funciones para transformación y agrupamiento de datos.\n\nAmbas librerías son fundamentales en la manipulación y análisis de datos en Python, y se utilizan comúnmente en el campo de la inteligencia artificial.",
+  "score": 1.0
+}

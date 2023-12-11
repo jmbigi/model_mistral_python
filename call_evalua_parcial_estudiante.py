@@ -56,6 +56,10 @@ if __name__ == "__main__":
         for pregunta, respuesta in zip(preguntas, respuestas_estudiante):
             prompt = f"""
     Dada la siguiente Pregunta y la siguiente Respuesta quiero la Nota del Estudiante (entre 0,0 y 1,0).
+    Respuesta incorrectas, deficientes o sin respuesta vale 0,0.
+    Respuesta insuficiente vale 0,3 y 0,4.
+    Respuesta aceptable vale 0,5 y 0,7.
+    Respuesta excelente vale 0,7 y 1,0.
     La Nota debe ser solo un número. Tu respuesta debe ser solo la Nota (puntaje, un número), y en Español.
     También necesito la Nota Final del Estudiante (promedio de las últimas 10 notas en las preguntas, considerar ceros).
     Pregunta: {pregunta["pregunta"]}

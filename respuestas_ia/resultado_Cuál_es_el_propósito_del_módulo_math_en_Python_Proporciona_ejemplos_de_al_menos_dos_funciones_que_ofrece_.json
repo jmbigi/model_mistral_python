@@ -1,0 +1,5 @@
+{
+  "question": "¿Cuál es el propósito del módulo math en Python? Proporciona ejemplos de al menos dos funciones que ofrece.",
+  "answer": "\nEl módulo math en Python ofrece una variedad de funciones matemáticas y estadísticas que pueden utilizarse en programas y scripting. El propósito del módulo es proporcionar un conjunto de funciones para realizar operaciones matemáticas, como aritmética básica, trigonometría, función logarítmica, función exponencial, estadísticas y muchas otras.\n\nDos ejemplos de funciones que ofrece el módulo math son:\n\n* sin(x): calcula el seno de un ángulo en radianes. Ejemplo: `import math` `print(math.sin(3.14))`\n* factorial(n): calcula el factorial de un número natural. Ejemplo: `import math` `print(math.factorial(5))`",
+  "score": 1.0
+}

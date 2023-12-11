@@ -1,0 +1,5 @@
+{
+  "question": "¿Cuál es la función del código en el módulo saludos?",
+  "answer": "\nLa función del código en el módulo saludos es crear y devolver un mensaje de saludo personalizado al usuario. La función recibe como parámetro el nombre del usuario, lo cual se utiliza para crear una cadena de texto que contiene el mensaje de saludo personalizado. El código luego devuelve la cadena de texto.\n\nEl módulo saludos es un ejemplo de cómo se puede crear una función en Python que devuelva un valor específico, en este caso, un mensaje de saludo personalizado.",
+  "score": 1.0
+}

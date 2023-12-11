@@ -1,5 +1,5 @@
 {
   "question": "¿Cuál es la función del código en el módulo saludos?",
   "answer": "El código en el módulo saludos sería un string representado así input(“ingrese saludo”)",
-  "score": "\nNota del Estudiante: 0.6\n\nNota Final del Estudiante: No se puede determinar la nota final sin más información sobre las últimas 10 preguntas y sus respectivas notas."
+  "score": "La función del código en el módulo saludos es promover la interacción entre el usuario y el programa mediante una invitación para que ingresen un saludo. El código se representa con la expresión `input(\"ingrese saludo\")`, lo cual crea una ventana de diálogo donde el usuario puede ingresar su saludo. Este código es parte del módulo `saludos` y se utiliza en programas que necesitan obtener una respuesta de texto de la parte del usuario."
 }
