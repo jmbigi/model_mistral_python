@@ -1,5 +1,5 @@
 {
   "question": "Menciona al menos dos librerías ampliamente usadas en Python, describiendo brevemente su propósito.",
-  "answer": "\nLibrerías ampliamente usadas en Python:\n\n1. NumPy: NumPy es una librería de Python para manipulación y análisis de arrays y matrices. Es una herramienta potente para trabajar con datos numéricos y ofrece funciones para operaciones matemáticas, estadísticas, eficiente y rápidas.\n2. Pandas: Pandas es otra librería popular de Python para manejo y análisis de datos. Es una herramienta de procesamiento de datos que ofrece data structures como series y DataFrame, así como funciones para limpieza, manipulación y visualización de datos.",
+  "answer": "\nPor favor, mencione dos librerías comunes en Python y proporcione una breve descripción de su fin.",
   "score": 1.0
 }

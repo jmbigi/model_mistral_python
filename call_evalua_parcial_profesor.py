@@ -83,7 +83,7 @@ def evalIA(preguntas, respuestas_folder):
 
     if len(answers) > 0:
         answer_filename = os.path.join(
-            os.path.dirname(respuestas_profesor), 'respuestas_ia' + ".json")
+            os.path.dirname(respuestas_folder), 'respuestas_ia' + ".json")
         with open(answer_filename, "w", encoding="utf-8") as f:
             json.dump(answers,
                       f, ensure_ascii=False, indent=2)
