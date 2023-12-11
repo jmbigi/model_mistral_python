@@ -59,9 +59,10 @@ def evalProf(preguntas, respuestas_profesor, respuestas_folder):
                     clean_question(pregunta["pregunta"])
                 )
                 answers.append({"question": pregunta["pregunta"], "answer": respuesta["respuesta"]})
+                break
             else:
                 print(f"ERROR: Pregunta sin respuesta: {pregunta}")
-        if len(answers):
+        if len(answers) > 0:
             answer_filename = os.path.join(
                 os.path.dirname(respuestas_profesor), 'respuestas_ia' + ".json")
             with open(answer_filename, "w", encoding="utf-8") as f:

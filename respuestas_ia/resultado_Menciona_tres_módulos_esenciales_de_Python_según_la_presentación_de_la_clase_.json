@@ -1,5 +1,5 @@
 {
   "question": "Menciona tres módulos esenciales de Python según la presentación de la clase.",
-  "answer": "\nMódulos esenciales de Python según la presentación de la clase son:\n\n1. Lists y Tuplas\n2. Diccionarios\n3. Funciones",
+  "answer": "\n1. NumPy\n2. Pandas\n3. Matplotlib",
   "score": 1.0
 }
